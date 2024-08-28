@@ -17,9 +17,16 @@
     padding: 0;    
 }
 
-body {
-    height: 100vh;
+html {
+    font-size: 16px;
+}
+
+html, body {
+    height: 100%;
     width: 100%;
+}
+
+body {    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,6 +34,79 @@ body {
     
 }
 
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    height: 90%;
+    width: 80%;
+    max-width: 1420px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
 h1 {
     color: var(--primary-color);
+}
+
+/*
+
+Stock section
+
+*/
+
+#stock {
+    gap: 4rem;
+}
+
+.stock__header {
+    font-size: 3.7rem;
+    margin: 3rem 0 0 0;
+}
+
+.stock__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stock__card {
+    height: 400px;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+}
+
+/*
+
+User UI section
+
+*/
+
+.user-ui__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    max-width: 50%;    
+}
+
+.user-ui_input {
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+.user-ui__btn {
+    font-size: 1.5rem;
 }
