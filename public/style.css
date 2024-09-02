@@ -78,6 +78,7 @@ Stock section
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 3rem;
 }
 
 .stock__card {
@@ -85,7 +86,8 @@ Stock section
     width: 100%;
     max-width: 300px;
     margin: 0 auto;
-    border: 1px solid lightgray;
+    border: 1.8px solid;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     border-radius: 8px;
 }
 
@@ -103,10 +105,35 @@ User UI section
 }
 
 .user-ui_input {
+    font-size: 1.2rem;
     padding: .5rem;
     border-radius: 5px;
+    height: 2.5rem;
+    background-color: var(--secondary-color);
 }
 
 .user-ui__btn {
     font-size: 1.5rem;
+    font-weight: 700;
+    display: inline-block;
+    margin-left: 2rem;
+    padding: 8px;
+    cursor: pointer;
+    color: var(--primary-color);
+    
+    border-radius: 20px; 
+    outline: none;
+    text-decoration: none;   
+    background-color: var(--background-color);
+    box-shadow: #161618 0 -12px 6px inset;
+    transition: all .15s ease;
 }
+
+.user-ui__btn:hover {
+    color: var(--secondary-color);
+    box-shadow: var(--primary-color) 0 -6px 8px inset;
+    background-color: var(--primary-color);
+    transform: scale(1.125);
+}
+
+
